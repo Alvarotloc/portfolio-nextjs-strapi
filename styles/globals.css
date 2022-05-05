@@ -32,7 +32,7 @@ html {
 body {
   font-size: 16px;
   /* Esto lo que hace es que 1rem equivalga a 10px */
-  background-color: var(--fondo-gris);
+  background-color: var(--fondo);
 }
 .side-bar {
   background-color: var(--fondo-sidebar);
@@ -115,12 +115,14 @@ body {
   height: 100vh;
   margin-left: 47rem;
   padding-top: 13vh;
-  overflow: scroll;
+  padding-bottom: 5rem;
+  overflow-y: scroll;
   padding-right: 4rem;
 }
 .profile {
   height: 25rem;
   min-width: 25rem;
+  overflow: hidden;
   border-radius: 50%;
 }
 .aboutme-info {
@@ -236,8 +238,7 @@ input[type="submit"] {
 .card {
   max-height: 50rem;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
   overflow: hidden;
   width: 31rem;
@@ -251,9 +252,13 @@ input[type="submit"] {
 .card-content * {
   margin-bottom: 1rem;
 }
+.img-top-card{
+  height: 15rem;
+  width: 31rem;
+}
 .card-content h3 {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 900;
   color: var(--fondo-sidebar);
 }
 .card-content p {
@@ -264,7 +269,7 @@ input[type="submit"] {
 .tech {
   display: inline;
   background-color: var(--tech);
-  color: var(--fondo-gris);
+  color: var(--fondo);
   font-size: 1.3rem;
   font-weight: 300;
   padding: 0.4rem 1rem;
@@ -280,15 +285,11 @@ input[type="submit"] {
 .btn-purple,
 .btn-blue {
   background: linear-gradient(to right, rgb(150, 0, 150), rgb(216, 0, 216));
-  color: var(--fondo-gris);
+  color: var(--white);
   padding: 1rem 3rem;
   text-decoration: none;
   border-radius: 1rem;
   margin-right: 3rem;
-}
-.img-top-card {
-  height: 100%;
-  width: 100%;
 }
 .div-skill{
   display:flex;
