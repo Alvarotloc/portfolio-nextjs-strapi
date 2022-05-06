@@ -90,7 +90,7 @@ const Projects = ({proyectos}:IProyectos):JSX.Element => {
 }
 
 export async function getStaticProps() {
-    const url = `http://localhost:1337/proyectos`;
+    const url = `${process.env.API_URL}/proyectos`;
     const respuesta = await fetch(url);
     const proyectos = await respuesta.json();
     return {

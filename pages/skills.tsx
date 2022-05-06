@@ -30,7 +30,7 @@ const skills = ({skills}:ISkills):JSX.Element => {
 }
 
 export async function getStaticProps() {
-    const url = `http://localhost:1337/skills`;
+    const url = `${process.env.API_URL}/skills`;
     const respuesta = await fetch(url);
     const skills = await respuesta.json();
     return {
