@@ -2,6 +2,9 @@ export interface IModal {
     modalActive : boolean;
     setModalActive : Function
 }
+interface Image{
+    url : string
+}
 
 export interface IProyecto {
     _id: string;
@@ -13,6 +16,10 @@ export interface IProyecto {
     tech:string,
     image : Image
 }
-interface Image{
-    url : string
+
+export interface ISkill{
+    _id : string,
+    name : string,
+    experience : string,
+    image : Image
 }
