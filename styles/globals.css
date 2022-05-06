@@ -194,11 +194,14 @@ label {
 }
 input[type="submit"] {
   width: 100%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
   border-radius: 1rem;
   padding: 1.5rem 0;
   border: none;
   background-color: var(--fondo-sidebar);
-  color: var(--fondo-gris);
+  color: var(--fondo);
   cursor: pointer;
 }
 #error,
@@ -208,7 +211,7 @@ input[type="submit"] {
   border: 0.4rem solid var(--border-red);
   padding: 1.8rem 0;
   text-transform: uppercase;
-  color: var(--fondo-gris);
+  color: var(--fondo);
 }
 #success {
   background-color: var(--bg-blue);

@@ -47,7 +47,7 @@ const SideBar = ({modalActive,setModalActive}:IModal): JSX.Element => {
         <Link href="/contact">
           <a
             className={
-              pathname === "/contacts" ? "nav-link active" : "nav-link"
+              pathname === "/contact" ? "nav-link active" : "nav-link"
             }
             onClick={handleClick}
           >
