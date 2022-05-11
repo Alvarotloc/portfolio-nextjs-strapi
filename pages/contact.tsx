@@ -1,7 +1,7 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
 import Layout from "../components/Layout";
-const contact = (): JSX.Element => {
+const Contact = (): JSX.Element => {
   const [error, setError] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
   const [name, setName] = useState<string>("");
@@ -80,4 +80,4 @@ const contact = (): JSX.Element => {
   );
 };
 
-export default contact;
+export default Contact;

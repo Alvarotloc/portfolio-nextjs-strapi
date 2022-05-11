@@ -39,10 +39,10 @@ const Card = ({  image,
       </div>
       {charging === false && (
         <>
-          <a href={repo} target="_blank" className="btn-purple">
+          <a href={repo} target="_blank" rel="noreferrer" className="btn-purple">
             Repo
           </a>
-          <a href={url} target="_blank" className="btn-blue">
+          <a href={url} target="_blank" rel="noreferrer" className="btn-blue">
             Working
           </a>
         </>

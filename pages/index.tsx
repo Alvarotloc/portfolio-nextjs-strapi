@@ -16,7 +16,7 @@ const Home: NextPage = () => {
           </p>
           <a
             href="https://drive.google.com/file/d/1AZ5KHMQ_fhwyndNmXHV-It-QsLX8Jl-i/view?usp=sharing"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             Curriculum Vitae
           </a>

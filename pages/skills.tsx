@@ -6,7 +6,7 @@ import Skill from "../components/Skill";
 interface ISkills {
     skills : ISkill[]
 }
-const skills = ({skills}:ISkills):JSX.Element => {
+const Skills = ({skills}:ISkills):JSX.Element => {
     
     const [habilidades, setHabilidades] = useState<ISkill[]>([]);
     const [charging, setCharging] = useState<boolean>(true);
@@ -40,4 +40,4 @@ export async function getStaticProps() {
     }
   }
 
-export default skills
+export default Skills
