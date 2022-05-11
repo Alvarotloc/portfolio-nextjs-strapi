@@ -16,7 +16,9 @@ const Skills = ({skills}:ISkills):JSX.Element => {
         setTimeout(() => {
           setCharging(false);
         }, 1000);
-    },[])
+    },[skills])
+
+
   return (
     <Layout page="Skills">
               <div id="skills-container">

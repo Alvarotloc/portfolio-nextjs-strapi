@@ -17,7 +17,7 @@ const Projects = ({proyectos}:IProyectos):JSX.Element => {
         setTimeout(() => {
           setCharging(false);
         }, 2000);
-    },[]);
+    },[proyectos]);
 
     useEffect(() => {
         if (filter.trim() === "") {

@@ -1,5 +1,6 @@
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import Image from "next/image";
 
 interface SkillParams {
   image: string;
@@ -19,11 +20,16 @@ const Skill = ({
       {charging ? (
         <Skeleton width={300} height={150} />
       ) : (
-          <img
+        <div className="img-top-card">
+          <Image
             src={image}
             alt="Technology skill"
             className="skill-image"
+            layout="responsive"
+            width={310}
+            height={150}
           />
+        </div>
       )}
       <div className="skill-content">
         <h2>{charging ? <Skeleton /> : name}</h2>
