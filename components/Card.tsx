@@ -42,7 +42,7 @@ const Card = ({  image,
           <a href={repo} target="_blank" rel="noreferrer" className="btn-purple">
             Repo
           </a>
-          <a href={url} target="_blank" rel="noreferrer" className="btn-blue">
+          <a href={url} target="_blank" rel="noreferrer" className="btn-purple">
             Working
           </a>
         </>

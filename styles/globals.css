@@ -283,14 +283,19 @@ input[type="submit"] {
   row-gap: 0.1rem;
   margin-bottom: 2rem;
 }
-.btn-purple,
-.btn-blue {
-  background: linear-gradient(to right, rgb(150, 0, 150), rgb(216, 0, 216));
+.btn-purple{
+  background-color: #191919;
   color: var(--white);
   padding: 1rem 3rem;
   text-decoration: none;
   border-radius: 1rem;
+  transition: background-color .4s;
+}
+.btn-purple:first-of-type{
   margin-right: 3rem;
+}
+.btn-purple:hover{
+  background-color: black;
 }
 .div-skill{
   display: grid;
