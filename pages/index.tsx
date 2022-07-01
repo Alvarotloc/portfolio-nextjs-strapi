@@ -15,7 +15,7 @@ const Home: NextPage = () => {
             personal improvement to know my best version.
           </p>
           <a
-            href="https://drive.google.com/file/d/1AZ5KHMQ_fhwyndNmXHV-It-QsLX8Jl-i/view?usp=sharing"
+            href="https://drive.google.com/file/d/1GKF83Bq_Kt35bcLTO-eVU62Tk2c0C53g/view?usp=sharing"
             target="_blank" rel="noreferrer"
           >
             Curriculum Vitae
