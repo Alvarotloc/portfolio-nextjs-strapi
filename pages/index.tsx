@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Layout from "../components/Layout";
 
-const Home: NextPage = () => {
+const Home: NextPage = ():JSX.Element => {
   return (
     <Layout page="About me">
       <div className="aboutme-info">

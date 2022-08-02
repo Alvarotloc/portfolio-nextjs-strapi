@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import { IProyecto } from '../interfaces/index';
 import Card from '../components/Card';
@@ -6,7 +6,7 @@ interface IProyectos {
     proyectos : IProyecto[]
 }
 
-const Projects = ({proyectos}:IProyectos):JSX.Element => {
+const Projects:FC<IProyectos> = ({proyectos}):JSX.Element => {
     const [filter, setFilter] = useState<string>("");
     const [projects, setProjects] = useState<IProyecto[]>([]);
     const [filtereds, setFiltereds] = useState<IProyecto[]>([]);
@@ -24,7 +24,7 @@ const Projects = ({proyectos}:IProyectos):JSX.Element => {
           return setFiltereds(projects);
         }
         setFiltereds(projects.filter((project) => filter === project.tech));
-      }, [filter]);
+      }, [filter, projects]);
 
   return (
     <Layout page='Projects'>
@@ -46,7 +46,7 @@ const Projects = ({proyectos}:IProyectos):JSX.Element => {
           >
             <option value="">-- All Projects --</option>
             <option value="react">React</option>
-            <option value="tailwindcss">React + Tailwind</option>
+            <option value="angular">Angular</option>
             <option value="next">NextJS</option>
             <option value="basic">HTML and Css</option>
             <option value="vue">Vue Js</option>
